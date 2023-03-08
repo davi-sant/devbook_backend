@@ -19,12 +19,6 @@ var userRoutes = []AppRouter{
 		RequiresAuthentication: false,
 	},
 	{
-		URI:                    "/users",
-		Method:                 http.MethodGet,
-		Func:                   controllers.GetUsers,
-		RequiresAuthentication: false,
-	},
-	{
 		URI:                    "/users/{userId}",
 		Method:                 http.MethodGet,
 		Func:                   controllers.GetUser,
